@@ -1,0 +1,113 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.container-80 {
+  padding: 0 10%;
+  margin: 0 auto;
+}
+.fl-l {
+  float: left;
+}
+.fl-r {
+  float: right;
+}
+
+/* HEADER */
+header {
+  height: 100px;
+  line-height: 100px;
+}
+header ul {
+  list-style: none;
+}
+header .header-left img {
+  height: 25px;
+  margin-top: 40px;
+}
+header .header-left ul li,
+header .header-right ul li {
+  float: left;
+}
+header ul li:not(:last-child) {
+  padding-right: 30px;
+}
+/* header links */
+header ul li a {
+  text-decoration: none;
+  color: #8D8D8D;
+}
+header ul li a:hover {
+  color: #000;
+}
+header ul li a:focus {
+  color: #000;
+  font-weight: 400;
+}
+header ul li a.btn {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+  font-weight: 400;
+}
+header ul li a#sign-in {
+  background-color: #F0F0F0;
+  color: #000;
+}
+header ul li a#sign-in:hover {
+  background-color: #EAEAEA;
+}
+header ul li a#get-app {
+  background-color: #000;
+  color: #FFF;
+}
+header ul li a#get-app:hover {
+  background-color: rgba(0,0,0,.8);
+}
+
+/* DROPDOWNS */
+header .drop-trigger {
+  position: relative;
+}
+header .dropdown {
+  display: none;
+  position: absolute;
+  left: -20px;
+  top: 70%;
+  line-height: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #EAEAEA;
+  background-color: #FFF;
+}
+header .dropdown ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+header .dropdown.features {
+  display: none;
+  justify-content: space-around;
+  left: -200px;
+  width: 800px;
+}
+header .dropdown.features .features-column h4 {
+  color: #CED5DB;
+  font-size: 80%;
+  text-transform: uppercase;
+}
+header .dropdown.features .features-column h4 span {
+  margin-right: 10px;
+  padding: 5px;
+  color: #FFF;
+  background-color: #CED5DB;
+  border-radius: 50%;
+}
+/* dropdown.active attivato da js */
+header .drop-trigger .dropdown.active {
+  display: flex;
+}
