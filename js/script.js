@@ -20,8 +20,10 @@ $(function(){
     // quando avviene, la funzione anonima cerca
     // all'interno dell'elemento in oggetto
     // l'elemento con classe .dropdown e ad esso
-    // rimuove la classe active chiudendo il dropdown
-    $(this).find('.dropdown').removeClass('active');
+    // rimuove la classe active chiudendo il dropdown.
+    // cliccando di nuovo sullo stesso drop-trigger
+    // riaggiungo la classe active con il toggle.
+    $(this).find('.dropdown').toggleClass('active');
   });
 
 });
